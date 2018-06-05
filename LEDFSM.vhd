@@ -51,107 +51,69 @@ comb_proc_1: process (PS, INPUT)
     begin
         case PS is
             when a =>
-				SCORE <= "0000";
-				DISPLAY <= "00000001";
-                if (INPUT = "00000001") then
-					NS <= b;
-				else 
-					NS <= a;
+				DONE <= '0';
+				LEDS <= "1000000000000000";
+				NS <= b;
             when b =>
-				SCORE <= "0001";
-				DISPLAY <= "00000101";
-                if (INPUT = "00000101") then
-					NS <= c;
-				else 
-					NS <= b;
+				DONE <= '0';
+				LEDS <= "0100000000000000";
+				NS <= c;
             when c =>
-				SCORE <= "0010";
-				DISPLAY <= "00011001";
-                if (INPUT = "00011001") then
-					NS <= d;
-				else 
-					NS <= c;
+				DONE <= '0';
+				LEDS <= "0010000000000000";
+				NS <= d;
             when d =>
-				SCORE <= "0011";
-				DISPLAY <= "00000111";
-                if (INPUT = "00000111") then
-					NS <= e;
-				else 
-					NS <= d;
+				DONE <= '0';
+				LEDS <= "0001000000000000";
+				NS <= e;
             when e =>
-				SCORE <= "0100";
-				DISPLAY <= "10000000";
-                if (INPUT = "10000000") then
-					NS <= f;
-				else 
-					NS <= e;
-			when f =>
-				SCORE <= "0101";
-				DISPLAY <= "01100100";
-                if (INPUT = "01100100") then
-					NS <= g;
-				else 
-					NS <= f;
-			when g =>
-				SCORE <= "0110";
-				DISPLAY <= "01100100";
-                if (INPUT = "01100100") then
-					NS <= h;
-				else 
-					NS <= g;
-			when h =>
-				SCORE <= "0111";
-				DISPLAY <= "01010101";
-                if (INPUT = "01010101") then
-					NS <= i;
-				else 
-					NS <= h;
-			when i =>
-				SCORE <= "1000";
-				DISPLAY <= "00010110";
-                if (INPUT = "00010110") then
-					NS <= j;
-				else 
-					NS <= i;
-			when j =>
-				SCORE <= "1001";
-				DISPLAY <= "00000100";
-                if (INPUT = "00000100") then
-					NS <= k;
-				else 
-					NS <= j;
-			when k =>
-				SCORE <= "1011";
-				DISPLAY <= "00001000";
-                if (INPUT = "00001000") then
-					NS <= l;
-				else 
-					NS <= k;
-			when l =>
-				SCORE <= "1100";
-				DISPLAY <= "00011101";
-                if (INPUT = "00011101") then
-					NS <= m;
-				else 
-					NS <= l;
-			when m =>
-				SCORE <= "1101";
-				DISPLAY <= "11010100";
-                if (INPUT = "11010100") then
-					NS <= n;
-				else 
-					NS <= m;
-			when n =>
-				SCORE <= "1110";
-				DISPLAY <= "00001100";
-                if (INPUT = "00001100") then
-					NS <= o;
-				else 
-					NS <= n;
-			when o =>
-				SCORE <= "1111";
-				DISPLAY <= "00000000";
+				DONE <= '0';
+				LEDS <= "0000100000000000";
+				NS <= f;
+            when f =>
+				DONE <= '0';
+				LEDS <= "0000010000000000";
+				NS <= g;
+            when g =>
+				DONE <= '0';
+				LEDS <= "0000001000000000";
+				NS <= h;
+            when h =>
+				DONE <= '0';
+				LEDS <= "0000000100000000";
+				NS <= i;
+            when i =>
+				DONE <= '0';
+				LEDS <= "0000000010000000";
+				NS <= j;
+            when j =>
+				DONE <= '0';
+				LEDS <= "0000000001000000";
+				NS <= k;
+            when k =>
+				DONE <= '0';
+				LEDS <= "0000000000100000";
+				NS <= l;
+            when l =>
+				DONE <= '0';
+				LEDS <= "0000000000010000";
+				NS <= m;
+            when m =>
+				DONE <= '0';
+				LEDS <= "0000000000001000";
+				NS <= n;
+            when n =>
+				DONE <= '0';
+				LEDS <= "0000000000000100";
 				NS <= o;
+            when o =>
+				DONE <= '0';
+				LEDS <= "0000000000000010";
+				NS <= p;
+            when p =>
+				DONE <= '1';
+				LEDS <= "1111111111111111";
+				NS <= p;
 					
             when others =>
                 NS <= a;
