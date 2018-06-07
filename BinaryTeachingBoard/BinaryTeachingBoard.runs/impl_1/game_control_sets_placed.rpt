@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Thu Jun  7 10:24:50 2018
+| Date         : Thu Jun  7 12:11:50 2018
 | Host         : SFRAZEE-NP8952 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file game_control_sets_placed.rpt
 | Design       : game
@@ -34,7 +34,7 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               6 |            3 |
-| No           | No                    | Yes                    |              20 |           11 |
+| No           | No                    | Yes                    |              20 |            8 |
 | No           | Yes                   | No                     |              62 |           16 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
@@ -50,8 +50,8 @@ Table of Contents
 +-----------------------+---------------+--------------------------+------------------+----------------+
 |  DisplayIt/my_clk/CLK |               |                          |                1 |              2 |
 |  clk_IBUF_BUFG        |               |                          |                2 |              4 |
-|  clk_IBUF_BUFG        |               | reset_IBUF               |                4 |              4 |
-|  slowdown/CLK         |               | reset_IBUF               |                7 |             16 |
+|  clk_IBUF_BUFG        |               | reset_IBUF               |                3 |              4 |
+|  slowdown/CLK         |               | reset_IBUF               |                5 |             16 |
 |  clk_IBUF_BUFG        |               | slowdown/tmp_clk         |                8 |             31 |
 |  clk_IBUF_BUFG        |               | DisplayIt/my_clk/tmp_clk |                8 |             31 |
 +-----------------------+---------------+--------------------------+------------------+----------------+

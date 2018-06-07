@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1528392226">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1528398624">
   <File Type="ROUTE-PWR" Name="game_power_routed.rpt"/>
   <File Type="PA-TCL" Name="game.tcl"/>
   <File Type="PWROPT-DCP" Name="game_pwropt.dcp"/>
@@ -120,6 +120,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/../../../../../../../../Downloads/VHDL-Binary-Teacher-master/BinaryTeachingBoard/archive_project_summary.txt"/>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="game"/>
@@ -128,10 +129,10 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/imports/Downloads/Basys3_Master.xdc">
+    <File Path="$PSRCDIR/constrs_1/imports/Downloads/Basys3_constraints.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/Basys3_Master.xdc"/>
-        <Attr Name="ImportTime" Val="1528236856"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/VHDL-Binary-Teacher-master/BinaryTeachingBoard/BinaryTeachingBoard.srcs/constrs_1/imports/Downloads/Basys3_constraints.xdc"/>
+        <Attr Name="ImportTime" Val="1528397669"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>

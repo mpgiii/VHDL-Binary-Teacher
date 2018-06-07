@@ -3,17 +3,17 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="35" Path="C:/Users/sfrazee/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-15616-SFRAZEE-NP8952/PrjAr/_X_/MICHAEL.xpr">
+<Project Version="7" Minor="35" Path="C:/Users/sfrazee/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-16576-SFRAZEE-NP8952/PrjAr/_X_/BinaryTeachingBoard.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="b518ea8e863e4172b6b41bc730633b01"/>
+    <Option Name="Id" Val="cae87f422faa4b93a44d442824c637c6"/>
     <Option Name="Part" Val="xc7a35tcpg236-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
     <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
     <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
     <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
-    <Option Name="CompiledLibDirXcelium" Val="$PPRDIR/../../../../../../../../Desktop/MICHAEL/MICHAEL.cache/compile_simlib/xcelium"/>
+    <Option Name="CompiledLibDirXcelium" Val="$PPRDIR/../../../../../../../../../../../../../Desktop/MICHAEL/MICHAEL.cache/compile_simlib/xcelium"/>
     <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
     <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
     <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
@@ -127,6 +127,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PPRDIR/../../../../../../../../Downloads/VHDL-Binary-Teacher-master/BinaryTeachingBoard/archive_project_summary.txt"/>
       <File Path="$PPRDIR/archive_project_summary.txt"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
@@ -136,10 +137,10 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PSRCDIR/constrs_1/imports/Downloads/Basys3_Master.xdc">
+      <File Path="$PSRCDIR/constrs_1/imports/Downloads/Basys3_constraints.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/Basys3_Master.xdc"/>
-          <Attr Name="ImportTime" Val="1528236856"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/VHDL-Binary-Teacher-master/BinaryTeachingBoard/BinaryTeachingBoard.srcs/constrs_1/imports/Downloads/Basys3_constraints.xdc"/>
+          <Attr Name="ImportTime" Val="1528397669"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>

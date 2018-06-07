@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.runs/impl_1'
+HD_PWD='C:/Users/sfrazee/Downloads/VHDL-Binary-Teacher-master/BinaryTeachingBoard/BinaryTeachingBoard.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log game.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source game.tcl -notrace
 
 

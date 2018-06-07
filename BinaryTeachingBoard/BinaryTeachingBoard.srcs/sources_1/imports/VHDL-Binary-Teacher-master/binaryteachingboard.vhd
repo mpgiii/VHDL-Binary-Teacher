@@ -90,7 +90,7 @@ begin
 						  F => whattodisplay );
 						  
 	DisplayIt : sseg_dec port map ( ALU_VAL => whattodisplay,
-									SIGN => '1',
+									SIGN => '0',
 									VALID => '1',
 									CLK => clk,
 									DISP_EN => disp_en,
