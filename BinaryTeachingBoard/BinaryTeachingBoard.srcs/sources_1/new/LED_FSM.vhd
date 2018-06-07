@@ -25,14 +25,14 @@ use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
 
 
-entity LEDFSM is
+entity LEDFSM is 
 	Port ( RESET : in STD_LOGIC;
 		   CLK : in STD_LOGIC;
 		   DONE : out STD_LOGIC;
 		   LEDs : out STD_LOGIC_VECTOR (15 downto 0) );
-end component LEDFSM;
+end LEDFSM;
 
-architecture Behavioral of FSM is
+architecture Behavioral of LEDFSM is
     type state_type is (a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p);
     signal PS, NS : state_type;
 
@@ -47,7 +47,7 @@ sync_proc: process (CLK, NS, RESET)
         end if;
     end process sync_proc;
     
-comb_proc_1: process (PS, INPUT)
+comb_proc_1: process (PS)
     begin
         case PS is
             when a =>

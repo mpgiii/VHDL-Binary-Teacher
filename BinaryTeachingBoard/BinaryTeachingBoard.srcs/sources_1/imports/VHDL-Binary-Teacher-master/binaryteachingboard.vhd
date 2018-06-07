@@ -14,7 +14,7 @@ entity game is
     Port ( reset : in STD_LOGIC;
            switches : in STD_LOGIC_VECTOR (7 downto 0);
            clk : in STD_LOGIC;
-           leds : out STD_LOGIC_VECTOR (4 downto 0);
+           leds : out STD_LOGIC_VECTOR (15 downto 0);
            segments : out STD_LOGIC_VECTOR (7 downto 0);
            disp_en : out STD_LOGIC_VECTOR (3 downto 0));
 end game;
@@ -41,7 +41,7 @@ architecture Behavioral of game is
 			   D0 : in STD_LOGIC_VECTOR(7 downto 0);
 			   D1 : in STD_LOGIC_VECTOR(7 downto 0);
 			   F : out STD_LOGIC_VECTOR(7 downto 0));
-	end MUX;
+	end component MUX;
 	
     component clk_div2 is
         Port (  clk : in std_logic;

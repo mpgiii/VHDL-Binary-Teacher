@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jun  7 09:57:53 2018
+# Process ID: 15616
+# Current directory: C:/Users/sfrazee/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9500
+# Log file: C:/Users/sfrazee/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/sfrazee/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project MICHAEL C:/Users/sfrazee/Desktop/MICHAEL -part xc7a35tcpg236-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Windows/Xilinx/Vivado/2017.4/data/ip'.
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 803.742 ; gain = 29.660
+set_property target_language VHDL [current_project]
+set_property simulator_language VHDL [current_project]
+add_files -norecurse -scan_for_includes {C:/Users/sfrazee/Desktop/VHDL-Binary-Teacher-master/binaryteachingboard.vhd C:/Users/sfrazee/Desktop/VHDL-Binary-Teacher-master/clock_div2.vhd C:/Users/sfrazee/Desktop/VHDL-Binary-Teacher-master/LEDFSM.vhd C:/Users/sfrazee/Desktop/VHDL-Binary-Teacher-master/sseg_dec.vhd C:/Users/sfrazee/Desktop/VHDL-Binary-Teacher-master/scoreFSM.vhd C:/Users/sfrazee/Desktop/VHDL-Binary-Teacher-master/MUX.vhd}
+import_files -force -norecurse
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+import_files -fileset constrs_1 -force -norecurse C:/Users/sfrazee/Downloads/Basys3_Master.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes {C:/Users/sfrazee/Desktop/VHDL-Binary-Teacher-master/LEDFSM.vhd C:/Users/sfrazee/Desktop/VHDL-Binary-Teacher-master/scoreFSM.vhd}
+import_files -force -norecurse {C:/Users/sfrazee/Desktop/VHDL-Binary-Teacher-master/LEDFSM.vhd C:/Users/sfrazee/Desktop/VHDL-Binary-Teacher-master/scoreFSM.vhd}
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes {C:/Users/sfrazee/Desktop/VHDL-Binary-Teacher-master/LEDFSM.vhd C:/Users/sfrazee/Desktop/VHDL-Binary-Teacher-master/scoreFSM.vhd}
+import_files -norecurse {C:/Users/sfrazee/Desktop/VHDL-Binary-Teacher-master/LEDFSM.vhd C:/Users/sfrazee/Desktop/VHDL-Binary-Teacher-master/scoreFSM.vhd}
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes {C:/Users/sfrazee/Desktop/VHDL-Binary-Teacher-master/LEDFSM.vhd C:/Users/sfrazee/Desktop/VHDL-Binary-Teacher-master/scoreFSM.vhd}
+import_files -norecurse {C:/Users/sfrazee/Desktop/VHDL-Binary-Teacher-master/LEDFSM.vhd C:/Users/sfrazee/Desktop/VHDL-Binary-Teacher-master/scoreFSM.vhd}
+WARNING: [filemgmt 20-354] The following file(s) were not imported. Local copy of file(s) already exists:
+C:/Users/sfrazee/Desktop/VHDL-Binary-Teacher-master/LEDFSM.vhd
+C:/Users/sfrazee/Desktop/VHDL-Binary-Teacher-master/scoreFSM.vhd
+Hint: use the '-force' option to overwrite the local copies.
+update_compile_order -fileset sources_1
+file mkdir C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.srcs/sources_1/new
+close [ open C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.srcs/sources_1/new/LEDFSM.vhd w ]
+add_files C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.srcs/sources_1/new/LEDFSM.vhd
+close [ open C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.srcs/sources_1/new/scoreFSM.vhd w ]
+add_files C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.srcs/sources_1/new/scoreFSM.vhd
+update_compile_order -fileset sources_1
+close [ open C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.srcs/sources_1/new/LEDFSM.vhd w ]
+add_files C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.srcs/sources_1/new/LEDFSM.vhd
+WARNING: [filemgmt 56-12] File 'C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.srcs/sources_1/new/LEDFSM.vhd' cannot be added to the project because it already exists in the project, skipping this file
+export_ip_user_files -of_objects  [get_files C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.srcs/sources_1/imports/VHDL-Binary-Teacher-master/LEDFSM.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.srcs/sources_1/imports/VHDL-Binary-Teacher-master/LEDFSM.vhd
+close [ open C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.srcs/sources_1/new/LED_FSM.vhd w ]
+add_files C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.srcs/sources_1/new/LED_FSM.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+[Thu Jun  7 10:13:47 2018] Launched synth_1...
+Run output will be captured here: C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu Jun  7 10:17:57 2018] Launched synth_1...
+Run output will be captured here: C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.runs/synth_1/runme.log
+export_ip_user_files -of_objects  [get_files C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.srcs/sources_1/new/LEDFSM.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.srcs/sources_1/new/LEDFSM.vhd
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu Jun  7 10:20:54 2018] Launched synth_1...
+Run output will be captured here: C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu Jun  7 10:22:48 2018] Launched synth_1...
+Run output will be captured here: C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Thu Jun  7 10:23:46 2018] Launched impl_1...
+Run output will be captured here: C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun  7 10:25:24 2018] Launched impl_1...
+Run output will be captured here: C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.runs/impl_1/runme.log
+archive_project F:/MICHAEL.xpr.zip -temp_dir C:/Users/sfrazee/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-15616-SFRAZEE-NP8952 -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/sfrazee/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-15616-SFRAZEE-NP8952' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/sfrazee/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-15616-SFRAZEE-NP8952/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'

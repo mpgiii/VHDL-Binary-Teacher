@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1528392168">
+  <File Type="PA-TCL" Name="game.tcl"/>
+  <File Type="REPORTS-TCL" Name="game_reports.tcl"/>
+  <File Type="RDS-RDS" Name="game.vds"/>
+  <File Type="RDS-UTIL" Name="game_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="game_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="game.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/LED_FSM.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/MICHAEL/MICHAEL.srcs/sources_1/new/LED_FSM.vhd"/>
+        <Attr Name="ImportTime" Val="1528391613"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL-Binary-Teacher-master/MUX.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/VHDL-Binary-Teacher-master/MUX.vhd"/>
+        <Attr Name="ImportTime" Val="1528242687"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL-Binary-Teacher-master/clock_div2.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/VHDL-Binary-Teacher-master/clock_div2.vhd"/>
+        <Attr Name="ImportTime" Val="1528242687"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/scoreFSM.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/MICHAEL/MICHAEL.srcs/sources_1/new/scoreFSM.vhd"/>
+        <Attr Name="ImportTime" Val="1528392156"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL-Binary-Teacher-master/sseg_dec.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/VHDL-Binary-Teacher-master/sseg_dec.vhd"/>
+        <Attr Name="ImportTime" Val="1528242687"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL-Binary-Teacher-master/binaryteachingboard.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/VHDL-Binary-Teacher-master/binaryteachingboard.vhd"/>
+        <Attr Name="ImportTime" Val="1528242687"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL-Binary-Teacher-master/scoreFSM.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Desktop/VHDL-Binary-Teacher-master/scoreFSM.vhd"/>
+        <Attr Name="ImportTime" Val="1528242687"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../Desktop/VHDL-Binary-Teacher-master/LEDFSM.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../../Desktop/VHDL-Binary-Teacher-master/scoreFSM.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="game"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Downloads/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1528236856"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

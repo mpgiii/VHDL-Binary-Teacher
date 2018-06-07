@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jun  7 10:22:50 2018
+# Process ID: 10988
+# Current directory: C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.runs/synth_1
+# Command line: vivado.exe -log game.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source game.tcl
+# Log file: C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.runs/synth_1/game.vds
+# Journal file: C:/Users/sfrazee/Desktop/MICHAEL/MICHAEL.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source game.tcl -notrace

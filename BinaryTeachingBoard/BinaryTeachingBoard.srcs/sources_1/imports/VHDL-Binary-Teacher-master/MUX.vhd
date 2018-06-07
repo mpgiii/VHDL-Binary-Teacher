@@ -18,7 +18,7 @@ entity MUX is
            F : out STD_LOGIC_VECTOR(7 downto 0));
 end MUX;
 
-architecture Behavioral of MUX8 is
+architecture Behavioral of MUX is
 
 begin
 
